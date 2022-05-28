@@ -49,7 +49,39 @@
 // @lc code=start
 package main
 func divide(dividend int, divisor int) int {
+	if divisor == 1{
+		return dividend
+	}else if divisor == -1{
+		if dividend == -2147483648{
+			return 2147483647
+		}else{
+			return -dividend
+		}
+	}
+	count := 0
+	flag := false
+	if (divisor < 0 && dividend > 0) || (divisor > 0 && dividend < 0){
+		flag = true
+	}
+	dividend = abs(dividend)
+	divisor = abs(divisor)
+	for dividend >= divisor{
+		dividend -= divisor
+		count++
+	}
+	if flag{
+		return -count
+	}else{
+		return count
+	}
+}
 
+func abs(a int) int{
+	if a < 0{
+		return -a
+	}else{
+		return a
+	}
 }
 // @lc code=end
 

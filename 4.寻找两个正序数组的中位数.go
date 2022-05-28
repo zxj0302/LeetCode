@@ -48,13 +48,6 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
     return  float64(median1)
 }
 
-func max(x, y int) int {
-    if x > y {
-        return x
-    }
-    return y
-}
-
 func min(x, y int) int {
     if x < y {
         return x
