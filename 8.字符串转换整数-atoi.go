@@ -127,7 +127,6 @@ func myAtoi(s string) int {
 	}else{
 		return value
 	}
-	return 0
 }
 // @lc code=end
 

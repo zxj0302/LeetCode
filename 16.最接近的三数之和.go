@@ -97,13 +97,5 @@ func threeSumClosest(nums []int, target int) int {
 	}
 	return target + minDiff
 }
-
-func abs(x int) int{
-	if x < 0 {
-		return -x
-	}else{
-		return x
-	}
-}
 // @lc code=end
 

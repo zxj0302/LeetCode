@@ -54,13 +54,6 @@
 // @lc code=start
 package main
 
-func min(a int, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
 func maxArea(height []int) int {
 	max := 0
 	for i, j := 0, len(height)-1; i < j; {
